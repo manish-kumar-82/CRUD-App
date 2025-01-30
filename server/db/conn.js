@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.set('strictQuery',false)
-const connectToMongo = async (MONGODB_URL) => {
+const connectToMongo = async () => {
   try {
     await mongoose.connect("mongodb://127.0.0.1:27017/crud_application");
     console.log("Connected Successfully");
